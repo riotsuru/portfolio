@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  padding-top: 3vh;
+}
+header{
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  font-size: 2em;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 100;
+  background-color: white;
+}
+
+.playfair-display{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: italic;
+}
+
+header ul{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+header ul li{
+  font-size: 1rem;
+  padding:0.75vh 1.5vw;
+  list-style: none;
+  background-color: white;
+}
+
+
+@media(max-width:959px) {
+  header{
+  padding: 0 2vw;
+  position: fixed;
+  width: 100%;
+  font-size: 2em;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header ul{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header ul li{
+  font-size: 1rem;
+  margin:0 3vw;
+  list-style: none;
+}
+}
+
+.container {
+  width: 100%;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 70vh;
+}
+
+.slide-wrapper {
+  display: flex;
+  animation: slide-flow 30s infinite linear 1s both;
+}
+
+.slide{
+  width: 500px;
+  height: 500px;
+  object-fit:cover;
+  border: 1px solid #ddd;
+}
+
+@keyframes slide-flow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto;
+  padding: 0;
+  width: 75%;
+  align-items: center;
+  color: black;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.116);
+  border: rgba(0, 0, 0, 0.295) double 1rem;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto;
+  padding: 0;
+  width: 75%;
+  align-items: center;
+  color: black;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.116);
+  border: rgba(0, 0, 0, 0.295) double 1rem;
+}
+
+.info-list{
+  margin: 2vh;
+  display: flex;
+}
+
+.skills-list{
+  list-style: none;
+}
+
+.skills-description{
+  background-color: white;
+}
+
+img{
+  height: 20vh;
+  width: 20vw;
+}
+
+#icon,#img1,#img2,#img3{
+  border-radius: 50%;
+}
+
+
+
+.container img:hover {
+  filter: grayscale(100%); 
+}
+
+
+#top a:link,#skills a:link,#works a:link,#mail a:link{
+  color: black;
+  text-decoration: none;
+}
+
+#top a:visited,#skills a:visited,#works a:visited,#mail a:visited{
+  color: black;
+}
+
+#top a:hover,#skills a:hover,#works a:hover,#mail a:hover{
+  color: black;
+  background-color: rgba(0, 0, 0, 0.164);
+  opacity: 0.7;
+}
+
+#top a:active,#skills a:active,#works a:active,#mail a:active{
+  color: black;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contents-intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#icon{
+  padding: 3vw;
+  height: 30vh;
+  width: 20vw;
+}
+
+
+.works{
+  display: flex;
+  margin: 3vh auto;
+  padding: 0;
+  width: 75%;
+  align-items: center;
+  color: black;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.116);
+  border: rgba(0, 0, 0, 0.295) double 1rem;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.footer-list{
+  list-style: none;
+}
+
+#contact{
+  padding: 1.5vh;
+  margin-bottom: 2vh;
+  font-size: smaller;
+}
+
+#contact a{
+  padding: 3vh;
+}
+
+
+#contact a:link{
+  -webkit-text-stroke: 1px white;
+  color: black;
+  text-decoration: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+#contact a:visited{
+  -webkit-text-stroke: 1px white;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact a:hover{
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact a:active{
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#github-icon{
+  height: 5vh;
+  width: 3vw;
+  border-radius: 50%;
+  margin-top: 1.5vh;
+}
