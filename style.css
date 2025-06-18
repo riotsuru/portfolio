@@ -40,30 +40,12 @@ header ul li{
 }
 
 
-@media(max-width:959px) {
-  header{
-  padding: 0 2vw;
-  position: fixed;
-  width: 100%;
-  font-size: 2em;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#icon{
+  padding: 3vw;
+  height: 30vh;
+  width: 20vw;
 }
 
-header ul{
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-header ul li{
-  font-size: 1rem;
-  margin:0 3vw;
-  list-style: none;
-}
-}
 
 .container {
   width: 100%;
@@ -176,11 +158,6 @@ img{
   align-items: center;
 }
 
-#icon{
-  padding: 3vw;
-  height: 30vh;
-  width: 20vw;
-}
 
 
 .works{
@@ -250,4 +227,56 @@ footer{
   width: 3vw;
   border-radius: 50%;
   margin-top: 1.5vh;
+}
+
+
+
+
+@media(max-width:969px) {
+  header{
+  padding: 0 2vw;
+  position: fixed;
+  width: 100%;
+  font-size: 2em;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header ul{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header ul li{
+  font-size: 1rem;
+  margin:0 3vw;
+  list-style: none;
+}
+
+#icon{
+height: 80px;
+width: 80px;
+}
+
+#github-icon{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 1.5vh;
+}
+
+#img1,#img2,#img3{
+  height: 80px;
+  width: 80px;
+}
+
+p{
+  margin: 3vw;
+}
+
+
+
 }
