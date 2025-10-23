@@ -1,125 +1,124 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-
-  <header class="playfair-display">
-    My Portfolio
-    <nav>
-
-      <ul>
-        <li id="top"><a href="index.html">top</a></li>
-        <li id="skills"><a href="#myskills">skills</a></li>
-        <li id="works"><a href="#myworks">works</a></li>
-        <li id="mail"><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
-  <main>
-    <div class="container">
-      <div class="slide-wrapper">
-        <img class="slide" src="images/1.jpg" alt="">
-        <img class="slide" src="images/10.jpg" alt="">
-        <img class="slide" src="images/2.jpg" alt="">
-        <img class="slide" src="images/4.jpg" alt="">
-        <img class="slide" src="images/5.jpg" alt="">
-        <img class="slide" src="images/7.jpg" alt="">
-        <img class="slide" src="images/6.jpg" alt="">
-        <img class="slide" src="images/3.jpg" alt="">
-        <img class="slide" src="images/8.jpg" alt="">
-        <img class="slide" src="images/9.jpg" alt="">
-      </div>
-      <div class="slide-wrapper">
-        <img class="slide" src="images/1.jpg" alt="">
-        <img class="slide" src="images/10.jpg" alt="">
-        <img class="slide" src="images/2.jpg" alt="">
-        <img class="slide" src="images/4.jpg" alt="">
-        <img class="slide" src="images/5.jpg" alt="">
-        <img class="slide" src="images/7.jpg" alt="">
-        <img class="slide" src="images/6.jpg" alt="">
-        <img class="slide" src="images/3.jpg" alt="">
-        <img class="slide" src="images/8.jpg" alt="">
-        <img class="slide" src="images/9.jpg" alt="">
-      </div>
-      <div class="slide-wrapper">
-        <img class="slide" src="images/1.jpg" alt="">
-        <img class="slide" src="images/10.jpg" alt="">
-        <img class="slide" src="images/2.jpg" alt="">
-        <img class="slide" src="images/4.jpg" alt="">
-        <img class="slide" src="images/5.jpg" alt="">
-        <img class="slide" src="images/7.jpg" alt="">
-        <img class="slide" src="images/6.jpg" alt="">
-        <img class="slide" src="images/3.jpg" alt="">
-        <img class="slide" src="images/8.jpg" alt="">
-        <img class="slide" src="images/9.jpg" alt="">
-      </div>
-    </div>
-    <div class="intro">
-      <h2 class=playfair-display>Introduction</h2>
-      <div class="contents-intro">
-        <img id=icon src="images/icon.png" alt="icon">
-        <div>
-          <p class="zen-kaku-gothic-new-regular">鶴町莉央。大学二年生。</p>
-          <p>授業でHTML/CSS・JavaScriptを触りWEBサイトを作る授業を選択したところ、</p>
-          <p>その面白さに感激してエンジニアを目指す。AIやデザイン等にも興味があるため幅広く学んでいる。</p>
-          <p>趣味は謎解きと犬と遊ぶこと（上のスライドショーは愛犬の凪）。</p>
+  <body>
+    <header class="playfair-display">
+      My Portfolio
+      <nav>
+        <ul>
+          <li id="top"><a href="index.html">top</a></li>
+          <li id="skills"><a href="#myskills">skills</a></li>
+          <li id="works"><a href="#myworks">works</a></li>
+          <li id="mail"><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 隠しモーダル -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span id="close" class="close">×</span>
+          <div class="modal-body">
+            <h2 class="playfair-display">Welcome to my portfolio site!</h2>
+            <p class="zen-kaku-gothic-new-regular">
+              初めまして、鶴町莉央のポートフォリオサイトへようこそ！
+            </p>
+            <p class="zen-kaku-gothic-new-regular">
+              こちらのサイトでは私の自己紹介やスキル、作品等を掲載しております。
+            </p>
+            <p class="zen-kaku-gothic-new-regular">
+              どうぞごゆっくりご覧ください。
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="container">
+        <div class="slide-wrapper" id="slides">
+          <img class="slide" src="images/1.jpg" alt="" />
+          <img class="slide" src="images/10.jpg" alt="" />
+          <img class="slide" src="images/2.jpg" alt="" />
+          <img class="slide" src="images/4.jpg" alt="" />
+          <img class="slide" src="images/5.jpg" alt="" />
+          <img class="slide" src="images/7.jpg" alt="" />
+          <img class="slide" src="images/6.jpg" alt="" />
+          <img class="slide" src="images/3.jpg" alt="" />
+          <img class="slide" src="images/8.jpg" alt="" />
+          <img class="slide" src="images/9.jpg" alt="" />
+        </div>
+      </div>
+      <p class="zen-kaku-gothic-new-regular small-text">写真をクリック！</p>
+      <div class="intro">
+        <h2 class="playfair-display">Introduction</h2>
+        <div class="contents-intro">
+          <img id="icon" src="images/icon.png" alt="icon" />
+          <div>
+            <p class="zen-kaku-gothic-new-regular">鶴町莉央。大学二年生。</p>
+            <p>
+              授業でHTML/CSS・JavaScriptを触りWEBサイトを作る授業を選択したところ、
+            </p>
+            <p>
+              その面白さに感激してエンジニアを目指しはじめた。AIやデザイン等にも興味がある。
+            </p>
+            <p>趣味は謎解きと犬と遊ぶこと（上のスライドショーは愛犬の凪）。</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="skills playfair-display" id="myskills">
-      <h2>My skills </h2>
-      <p class="zen-kaku-gothic-new-regular">自己学習ではまずフロントエンドを勉強しようと考え、主にHTML/CSS・JavaScriptを学んでいる。</p>
-      <p class="zen-kaku-gothic-new-regular">授業等でC・Java・Pythonの経験あり。</p>
-      <p class="zen-kaku-gothic-new-regular">ITパスポート取得。TOEIC800点。基本情報技術者試験の学習中。</p>
-      <ul class="skills-list">
-        <li class="info-list"><img id="img1"
-            src="https://www.shoshinsha-design.com/wp-content/uploads/2016/10/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2016-10-19-23.56.48-760x460.png"
-            alt="html5"></li>
-        <li class="info-list"><img id="img2"
-            src="https://www.shoshinsha-design.com/wp-content/uploads/2016/10/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2016-10-21-22.58.01.png"
-            alt="css3"></li>
-        <li class="info-list"><img id="img3"
-            src="https://www.shoshinsha-design.com/wp-content/uploads/2016/10/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2016-10-21-22.58.06.png"
-            alt="javascript"></li>
-      </ul>
-    </div>
+      <div class="skills playfair-display" id="myskills">
+        <h2>My skills</h2>
+        <p class="zen-kaku-gothic-new-regular">
+          自己学習ではまずフロントエンドを勉強しようと考え、主にReactを学んでいる。
+        </p>
+        <p class="zen-kaku-gothic-new-regular">基本情報技術者試験取得。</p>
+        <div class="skill-icons">
+          <img src="images/stack.png" alt="myskill-icons" />
+        </div>
+      </div>
 
-    <div class="works playfair-display">
-      <h2 id="myworks">My works</h2>
-      <p class="zen-kaku-gothic-new-regular">作成中</p>
-    </div>
-  </main>
-  <footer>
-    <div id="contact" class="playfair-display">
-      <p>contact</p>
-      <a href="malito:rio.tsuru22@gmail.com">rio.tsuru22@gmail.com</a>
-      <a href="https://github.com/riotsuru"><img id="github-icon" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github"></a>
-    </div>
+      <div class="works playfair-display">
+        <h2 id="myworks">My works</h2>
+        <p class="zen-kaku-gothic-new-regular">作成中</p>
+      </div>
+    </main>
+    <footer>
+      <div id="contact" class="playfair-display">
+        <p>contact</p>
+        <a href="malito:rio.tsuru22@gmail.com">rio.tsuru22@gmail.com</a>
+        <a href="https://github.com/riotsuru"
+          ><img
+            id="github-icon"
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="github"
+        /></a>
+        <a href="https://x.com/riririenen"
+          ><img
+            id="x-icon"
+            src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg"
+            alt="x"
+        /></a>
+      </div>
 
-    <small> &copy; Rio Tsurumachi</small>
-  </footer>
+      <small> &copy; Rio Tsurumachi</small>
+    </footer>
+  </body>
 
-</body>
-
-
-<script src="main.js">
-</script>
-
+  <script src="main.js"></script>
 </html>
