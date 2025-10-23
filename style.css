@@ -235,9 +235,18 @@ footer {
   height: 5vh;
   width: 3vw;
   border-radius: 50%;
-  margin: 1.5vh 0 0 0;
+  margin: 2vh 0 0 0;
+  padding: 0;
 }
 
+.profile-icons {
+  padding: 0;
+}
+.qiita {
+  font-size: 2rem;
+  margin: 1vh 0 0 1vw;
+  color: white;
+}
 @media (max-width: 969px) {
   header {
     padding: 0 2vw;
@@ -265,13 +274,6 @@ footer {
   #icon {
     height: 80px;
     width: 80px;
-  }
-
-  #github-icon {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin-top: 1.5vh;
   }
 
   #img1,
